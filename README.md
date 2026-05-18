@@ -1,47 +1,47 @@
-# 🤖 AI Chatbot with Zero Short Prompting (Gemini API)
+# AI Chatbot with Zero Short Prompting (Gemini API)
 
-## 📌 Project Overview
-This project is a full-stack AI chatbot developed using **React.js** for the frontend and **Node.js (Express)** for the backend, integrated with the **Gemini API**.
+## Project Overview
+This project is a full-stack AI chatbot developed using React.js for the frontend and Node.js (Express) for the backend, integrated with the Gemini API.
 
-The application delivers a modern conversational experience similar to ChatGPT and Claude, while introducing an enhancement technique called **Zero Short Prompting** to improve response quality even with minimal user input.
-
----
-
-## 🚀 Key Features
-
-- 💬 ChatGPT-style user interface  
-- 📜 Chat history sidebar  
-- ⚡ Fast and responsive AI responses  
-- 🧠 Context-aware conversations  
-- 🌙 Dark mode support  
-- 🧾 Markdown and code formatting  
-- ⏳ Typing indicator  
-- 📱 Fully responsive design  
+The application provides a modern conversational experience similar to ChatGPT and Claude, while introducing an enhancement technique called Zero Short Prompting to improve response quality even when users provide minimal input.
 
 ---
 
-## 🧠 What is Zero Short Prompting?
+## Key Features
 
-### 🔹 Definition
-**Zero Short Prompting** is a method where short or simple user inputs are automatically enhanced with structured context before being sent to the AI model.
-
-This allows users to interact naturally without needing to write detailed prompts while still receiving high-quality responses.
+- ChatGPT-style user interface  
+- Chat history sidebar  
+- Fast and responsive AI responses  
+- Context-aware conversations  
+- Dark mode support  
+- Markdown and code block rendering  
+- Typing indicator  
+- Fully responsive design  
 
 ---
 
-### 🔹 How It Works
+## What is Zero Short Prompting?
+
+### Definition
+Zero Short Prompting is a method where short or simple user inputs are automatically enhanced with structured context before being sent to the AI model.
+
+This approach allows users to interact naturally without needing to write detailed prompts, while still receiving accurate and meaningful responses.
+
+---
+
+### How It Works
 
 Instead of sending raw user input directly:
 
-1. User enters a short query  
-2. System analyzes user intent  
+1. The user enters a short query  
+2. The system analyzes the user’s intent  
 3. A hidden system prompt is added  
-4. Conversation history and context are injected  
-5. Enhanced prompt is sent to Gemini API  
+4. Conversation history and contextual rules are injected  
+5. The enhanced prompt is sent to the Gemini API  
 
 ---
 
-## ⚙️ Zero Short Prompting Architecture
+## Zero Short Prompting Architecture
 
 
 User Input
@@ -61,7 +61,7 @@ Frontend Display
 
 ---
 
-## 🧩 Implementation Details
+## Implementation Details
 
 ### Backend Prompt Enhancement
 
@@ -73,12 +73,12 @@ Understand user intent even if the input is short.
 `;
 
 const finalPrompt = `${systemPrompt}\nUser: ${userMessage}`;
-🔥 Enhancements Included
+Enhancements Included
 Intent recognition for short queries
 Context-aware response generation
 Automatic prompt structuring
-Improved clarity and accuracy
-🛠️ Tech Stack
+Improved clarity and response quality
+Tech Stack
 Frontend
 React.js
 Tailwind CSS
@@ -87,12 +87,12 @@ Node.js
 Express.js
 AI Integration
 Gemini API
-🔑 Environment Setup
+Environment Setup
 
 Create a .env file in the backend folder:
 
 GEMINI_API_KEY=your_api_key_here
-▶️ Running the Project
+Running the Project
 Backend
 cd backend
 npm install
